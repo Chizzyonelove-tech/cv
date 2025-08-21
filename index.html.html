@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chizoba, Blessing  Ezeh – CV</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --ink:#111318;
+      --muted:#5b606b;
+      --accent:#0d7c66;
+      --paper:#fff;
+      --rule:#e6e7eb;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--paper);
+      font:16px/1.65 "Libre Baskerville", Georgia, serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    .page{
+      max-width:var(--max);
+      margin:auto;
+      padding:48px 20px 96px;
+      display:grid;
+      grid-template-columns: 340px 1fr;
+      gap:48px;
+    }
+
+    /* Header / Name */
+    .name h1{
+      margin:0 0 6px;
+      font-family:"Merriweather", Georgia, serif;
+      font-weight:900;
+      line-height:1.1;
+      font-size:44px;
+      letter-spacing:.3px;
+    }
+    .name h1 .surname{letter-spacing:1px}
+    .name h1 .surname,
+    .name h1 .trailing{
+      display:block;
+    }
+
+    /* Portrait */
+    .portrait-wrap{
+      display:flex;
+      align-items:flex-start;
+      justify-content:center;
+    }
+    .portrait{
+      width:100%;
+      max-width:340px;
+      aspect-ratio:1/1;
+      border-radius:50%;
+      object-fit:cover;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      background:#f3f4f6;
+    }
+
+    /* Intro / Summary */
+    .summary{
+      margin-top:12px;
+      color:var(--ink);
+      font-size:17px;
+    }
+
+    /* Sections */
+    section{padding-top:28px; border-top:2px solid var(--rule); margin-top:28px}
+    h2{
+      font-family:"Merriweather", Georgia, serif;
+      font-weight:700;
+      margin:0 0 14px;
+      font-size:20px;
+      letter-spacing:.3px;
+    }
+
+    /* Two-column timeline lists (date | details) */
+    .timeline{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap:8px 20px;
+    }
+    .when{
+      color:var(--muted);
+      font-weight:700;
+      white-space:pre-line;
+    }
+    .item{padding-bottom:14px}
+
+    /* Lists */
+    ul.clean{margin:6px 0 0 0; padding-left:18px}
+    ul.clean li{margin:4px 0}
+
+    /* Contact */
+    .contact{
+      margin-top:18px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-weight:700;
+      text-decoration:none;
+      color:var(--accent);
+      border-bottom:2px solid currentColor;
+      padding-bottom:2px;
+    }
+    .contact .heart{font-size:18px}
+
+    /* Footer space */
+    footer{height:24px}
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .page{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:28px 16px 64px;
+      }
+      .name h1{font-size:36px}
+      .timeline{grid-template-columns: 110px 1fr}
+    }
+    @media print{
+      body{background:#fff}
+      .page{padding:0; gap:20px}
+      a{color:inherit; text-decoration:none}
+      section{border-color:#ddd}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="main">
+    <!-- LEFT COLUMN -->
+    <aside class="portrait-wrap" aria-label="Profile photo">
+      <img class="portrait" src="profile.jpg" alt="Portrait of Kingsley Oke Agaviezor">
+    </aside>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <header class="name">
+        <h1>
+          <span class="surname">EZEH,</span>
+          <span class="trailing">Chizoba Blessing.</span>
+        </h1>
+      </header>
+
+      <p class="summary">
+        With over 20 years' experience of working in the public sector and two years in the health sector,
+        I have the required knowledge and skill to develop and delight clients/patients/residents base rapidly
+        with significant growth results. I am a goal and relationship-oriented person who always strives to
+        achieve the highest standard possible at any time and in any situation. I delight in working in a
+        forward-thinking and fast-paced environment where values and significance is the driving force.
+      </p>
+
+      <section aria-labelledby="education">
+        <h2 id="education">ACADEMIC QUALIFICATIONS / EDUCATION PROFILE/DATES</h2>
+        <div class="timeline">
+          <div class="when">Jan 2022:</div>
+          <div class="item">
+            MAPA certification and First Aid / Basic Life Support Level 1 and 2
+          </div>
+
+          <div class="when">Jan 2022:</div>
+          <div class="item">
+            Manual Handling level 1 and 2
+          </div>
+
+          <div class="when">Sept 2021:</div>
+          <div class="item">
+            University of Leicester, Leicester, United Kingdom — Pg Cert in Financial Mathematics
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="work">
+        <h2 id="work">WORK EXPERIENCE WITH DATES</h2>
+        <div class="timeline">
+          <div class="when">June 2021<br>to Sept 2021:</div>
+          <div class="item">
+            HCL Workforce Solutions Agency to LPT, Glenfield Hospital and General Hospitals around Leicester
+          </div>
+
+          <div class="when">Nov 2021<br>to Date:</div>
+          <div class="item">
+            Greenstaff Medicals Agency to LPT to Hospitals, Care Homes and Residential Homes
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="hobbies">
+        <h2 id="hobbies">HOBBIES:</h2>
+        <ul class="clean">
+          <li>Music</li>
+          <li>Reading</li>
+          <li>Meeting new friends</li>
+        </ul>
+
+        <p>
+          <a class="contact" href="mailto:anekechizzy35@gmailcom" aria-label="Contact me via email">
+            <span class="heart">💚</span> CONTACT ME
+          </a>
+        </p>
+      </section>
+
+      <footer></footer>
+    </div>
+  </main>
+</body>
+</html>
